@@ -1,12 +1,9 @@
-import React from "react";
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
-import { FaBars } from 'react-icons/fa'
-// import { FaBars } from 'react-icons/io'
+
 
 export const SidebarData = [
     {
         title: 'Home',
-        path: '/',
+        path: '/SPACE',
         cName: 'nav-test',
         number: '00'
     },

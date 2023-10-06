@@ -1,12 +1,8 @@
 import React from 'react'
 import { close, logo } from '../assets/icons'
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai'
-import { Link, NavLink } from 'react-router-dom'
+import {  AiOutlineMenu } from 'react-icons/ai'
+import { Link } from 'react-router-dom'
 import { SidebarData } from './SidebarData'
-// import { FaBars } from 'react-icons/fa'
-// import { Link } from 'react-router-dom'
-// import { SidebarData } from './SidebarData'
-// import './navbar.css'
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = React.useState(false)
@@ -24,7 +20,7 @@ const Navbar = () => {
         setCurrebtIndex(3)
     }
   }
-  console.log(currentIndex)
+
 return (
     <nav>
         <div className='nav-container'>
@@ -35,34 +31,34 @@ return (
         </div>
         <div className='lineNav'></div>
         <div className='links-container'>
-        <NavLink activeClassName="N-active"  to='/'>
+        <Link  to='/SPACE'>
         <p
             onClick={event => goToSlides(event)} 
             className={currentIndex === 0 ? 'link N-active' : 'link'}  
             id='one'
         ><span className='number right'>00 </span><span className='text'> HOME</span></p>
-        </NavLink>
-        <NavLink activeClassName="N-active" to='/destination'>
+        </Link>
+        <Link to='/destination'>
         <p 
             onClick={event => goToSlides(event)}
             className={currentIndex === 1 ? 'link N-active' : 'link'} 
             id='two'
         ><span className='number'>01 </span><span className='text'> DESTINATION</span></p>
-        </NavLink>
-        <NavLink activeClassName="N-active" to='/crew'>
+        </Link>
+        <Link to='/crew'>
         <p 
             onClick={event => goToSlides(event)}
             className={currentIndex === 2 ? 'link N-active' : 'link'}
             id='three'
         ><span className='number'>02 </span><span className='text'> CREW</span></p>
-        </NavLink>
-        <NavLink to='/technology'>
+        </Link>
+        <Link to='/technology'>
         <p 
             onClick={event => goToSlides(event)}
             className={currentIndex === 3 ? 'link N-active' : 'link'} 
             id='four'
         ><span className='number'>03 </span><span className='text'> TECHNOLOGY</span></p>
-        </NavLink>
+        </Link>
         </div>
         </div>
         <>

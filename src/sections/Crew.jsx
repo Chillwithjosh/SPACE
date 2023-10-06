@@ -2,7 +2,7 @@ import React from 'react'
 import './crew.css'
 import Navbar from '../componenet/Navbar'
 import { crew } from '../index'
-import { RxDotFilled } from 'react-icons/rx'
+
 
 const Crew = () => {
     const [currentIndex, setCurrebtIndex] = React.useState(0)
