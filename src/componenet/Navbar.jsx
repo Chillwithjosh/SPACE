@@ -31,28 +31,28 @@ return (
         </div>
         <div className='lineNav'></div>
         <div className='links-container'>
-        <Link  to='/SPACE'>
+        <Link className='none'  to='/SPACE'>
         <p
             onClick={event => goToSlides(event)} 
             className={currentIndex === 0 ? 'link N-active' : 'link'}  
             id='one'
         ><span className='number right'>00 </span><span className='text'> HOME</span></p>
         </Link>
-        <Link to='/destination'>
+        <Link className='none' to='/destination'>
         <p 
             onClick={event => goToSlides(event)}
             className={currentIndex === 1 ? 'link N-active' : 'link'} 
             id='two'
         ><span className='number'>01 </span><span className='text'> DESTINATION</span></p>
         </Link>
-        <Link to='/crew'>
+        <Link className='none' to='/crew'>
         <p 
             onClick={event => goToSlides(event)}
             className={currentIndex === 2 ? 'link N-active' : 'link'}
             id='three'
         ><span className='number'>02 </span><span className='text'> CREW</span></p>
         </Link>
-        <Link to='/technology'>
+        <Link className='none' to='/technology'>
         <p 
             onClick={event => goToSlides(event)}
             className={currentIndex === 3 ? 'link N-active' : 'link'} 
@@ -90,7 +90,7 @@ return (
                 {SidebarData.map((item, index) => {
                 return (
                     <li key={index} className= {item.cName}>
-                        <Link to={item.path}>
+                        <Link className='none' to={item.path}>
                             <p className='title'><span className='number-p'>{item.number}</span><span className='text-p'>{item.title}</span></p>
                         </Link>
                     </li>

@@ -218,6 +218,10 @@ nav{
   border-bottom: 2px solid transparent ;
 }
 
+.none{
+  text-decoration: none;
+}
+
 /* .test{
   border-bottom: 2px solid rgb(201, 29, 29) ;
 } */
