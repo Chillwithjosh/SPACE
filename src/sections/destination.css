@@ -1,0 +1,259 @@
+.D-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.S-container{
+    color: #FFFFFF;
+    line-height: 35px;
+    font-size: 28px;
+    padding-right: 2rem;
+}
+
+.s-number{
+    margin-right: 2.5rem;
+    opacity: .7;
+}
+
+.s-text{
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+
+.D-image{
+    width: 270px;
+    padding-top: 3rem;
+    padding-left: 13rem;
+}
+
+.D-location-container{
+    width: 450px;
+    color: #FFFFFF;
+}
+
+.D-location{
+    display: flex;
+}
+
+.D-location-item{
+    font-size: 16px;
+    margin-right: 1.88rem;
+    padding-bottom: .5rem;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.D-location-item:hover{
+    border-bottom: 2px solid white;
+}
+.D-active{
+    border-bottom: 2px solid white;
+}
+
+/* .D-location-item:focus{
+    border-bottom: 2px solid white;
+} */
+
+/* .D-location-item.active{
+    border-bottom: 2px solid white;
+} */
+
+/* .moon.active{
+    border-bottom: 2px solid white;
+} */
+
+/* .D-location-item::after{
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: white;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: all 0.2s;
+    pointer-events: none;
+}
+
+.D-location-item:hover::after{
+    opacity: 1;
+} */
+
+/* .D-location-item:focus::after{
+    opacity: 1;
+} */
+
+.D-name{
+    font-size: 100px;
+}
+
+.D-subtext{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.D-line{
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  border-top: .1px solid rgba(228, 217, 217, 0.199);
+}
+
+.D-distance{
+    display: flex;
+    gap: 4rem;
+}
+
+.D-header{
+    font-size: 14px;
+    color: #D0D6F9;
+}
+
+.D-time{
+    font-size: 28px;
+}
+
+@media (max-width: 1000px) {
+
+}
+  
+@media (max-width: 820px) {
+    .D-container{
+        flex-direction: column;
+        /* justify-content: center;
+        align-items: center; */
+    }
+    .S-container{
+        font-size: 20px;
+        padding-left: 2rem;
+    }
+    .D-image{
+        width: 350px;
+        padding-top: 3rem;
+        padding-left: 14rem;
+        padding-bottom: 4rem;
+    }
+    .D-location-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: auto;
+    }
+    .D-location{
+        padding-bottom: 1rem;
+    }
+    .D-name{
+        font-size: 80px;
+        padding-right: 2rem;
+    }
+    
+    .D-subtext{
+        font-size: 16px;
+        width: 610px;
+    }
+    
+    .D-distance{
+        display: flex;
+        justify-content: center;
+    }
+}
+  
+@media (max-width: 768px) {
+    .D-image{
+        padding-bottom: 2rem;
+    }
+}
+
+@media (max-width: 450px){
+    .D-container{
+        padding-top: 2rem;
+    }
+    .S-container{
+        font-size: 20px;
+        text-align: center;
+    }
+    .D-image{
+        width: 200px;
+        padding-top: 3rem;
+        padding-left: 7rem;
+        padding-bottom: 1rem;
+    }
+    .D-location-container{
+        width: 312px;
+    }
+    .D-location{
+        padding-left: 2rem;
+    }
+    .D-location-item{
+        font-size: 14px;
+    }
+    .D-name{
+        font-size: 56px;
+        padding-right: 0;
+    }
+    
+    .D-subtext{
+        font-size: 15px;
+        width: 312px;
+    }
+    
+    .D-distance{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 375px){
+    .D-container{
+        padding-top: 0rem;
+    }
+    .s-number{
+        margin-right: 1rem;
+    }
+    .D-image{
+        padding-top: 1rem;
+        width: 150px;
+    }
+}
+
+
+@media only screen and (max-width: 1440px){ /* means 1440px lower */
+    .imageLandscapeD{
+      background-image: url('../assets/destination/background-destination-desktop.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100vw; 
+      height: 100vh;
+      position: relative;
+    }
+  }
+  
+  @media only screen and (max-width: 850px){
+    .imageTabletD{
+      background-image: url('../assets/destination/background-destination-tablet.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+  }
+  
+  
+  @media only screen and (max-width: 450px){
+    .imagePortraitD{
+      background-image: url('../assets/destination/background-destination-mobile.jpg');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+    }
+}
