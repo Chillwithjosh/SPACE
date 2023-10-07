@@ -5,9 +5,9 @@ A multipage website that explores the possibilities of space travel A React webs
 https://chillwithjosh.github.io/SPACE/
 
 ## Languages
-*CSS
-*HTML
-*Javascript
+* CSS
+* HTML
+* Javascript
 
 ## Support and contact details
 In case you run into any issues, kindly contact me on this email: olabiyijoshua15@gmail.com
