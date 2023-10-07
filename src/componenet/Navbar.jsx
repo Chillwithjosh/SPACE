@@ -34,28 +34,32 @@ return (
         <Link className='none'  to='/SPACE'>
         <p
             onClick={event => goToSlides(event)} 
-            className={currentIndex === 0 ? 'link N-active' : 'link'}  
+            // className={currentIndex === 0 ? 'link N-active' : 'link'}  
+            className='link N-active'
             id='one'
         ><span className='number right'>00 </span><span className='text'> HOME</span></p>
         </Link>
         <Link className='none' to='/destination'>
         <p 
             onClick={event => goToSlides(event)}
-            className={currentIndex === 1 ? 'link N-active' : 'link'} 
+            // className={currentIndex === 1 ? 'link N-active' : 'link'} 
+            className='link N-active'
             id='two'
         ><span className='number'>01 </span><span className='text'> DESTINATION</span></p>
         </Link>
         <Link className='none' to='/crew'>
         <p 
             onClick={event => goToSlides(event)}
-            className={currentIndex === 2 ? 'link N-active' : 'link'}
+            // className={currentIndex === 2 ? 'link N-active' : 'link'}
+            className='link N-active'
             id='three'
         ><span className='number'>02 </span><span className='text'> CREW</span></p>
         </Link>
         <Link className='none' to='/technology'>
         <p 
             onClick={event => goToSlides(event)}
-            className={currentIndex === 3 ? 'link N-active' : 'link'} 
+            // className={currentIndex === 3 ? 'link N-active' : 'link'} 
+            className='link N-active'
             id='four'
         ><span className='number'>03 </span><span className='text'> TECHNOLOGY</span></p>
         </Link>

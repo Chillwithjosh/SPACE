@@ -230,7 +230,7 @@ nav{
   border-bottom: 2px solid white ;
 } */
 
-.N-active{
+.N-active:hover{
   border-bottom: 2px solid white ;
 }
 
@@ -342,7 +342,7 @@ nav{
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 2440px) {
   .logo-container-portrait{
     display: none;
   }
@@ -430,7 +430,7 @@ nav{
   }
 }
 
-@media only screen and (max-width: 1440px){ /* means 1440px lower */
+@media only screen and (max-width: 2440px){ /* means 1440px lower */
   .imageLandscape{
     background-image: url('./assets/home/background-home-desktop.jpg');
     background-position: center center;
