@@ -1,14 +1,13 @@
 import React from 'react'
 import './technology.css'
 import Navbar from '../componenet/Navbar'
-import { crew, technology } from '../index'
+import { technology } from '../index'
 
 const Technology = () => {
     const [currentIndex, setCurrebtIndex] = React.useState(0)
-    const [active, setActive] = React.useState()
+    
     const goToSlide = (event) => {
     let x = event.target.id;
-    // setCurrebtIndex(techIndex)
     if(x === 'one'){
         setCurrebtIndex(0)
     }else if (x === 'two'){
@@ -32,9 +31,6 @@ const Technology = () => {
         <div className='T-max-container'>
             <div className='T-container'>
                 <div className='T-round-container'>
-                    {/* {technology.map((tech,techIndex) =>(
-                        <div key={techIndex} onClick={event => goToSlide(techIndex,event)} ><div className='T-round' id={tech.id}><div>{tech.number}</div></div></div>
-                    ))} */}
                     <div 
                     onClick={event => goToSlide(event)} 
                     className={currentIndex === 0 ? 'T-round T-active' : 'T-round'} id='one'>1</div>

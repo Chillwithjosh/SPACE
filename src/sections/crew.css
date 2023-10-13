@@ -59,9 +59,6 @@
     margin-right: 2rem;
 }
 
-/* .C-active-p{
-    background-color: #2F2F2F;
-} */
 
 .C-active{
     background-color: white;
@@ -228,7 +225,6 @@
     .C-info-container{
         padding-bottom: 2rem;
         padding-left: 0rem;
-        /* text-align: center; */
     }
     
     .C-label{

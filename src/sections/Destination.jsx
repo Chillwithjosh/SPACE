@@ -1,25 +1,13 @@
 import React from 'react'
 import './destination.css'
 import Navbar from '../componenet/Navbar'
-import { mars } from '../assets/destination'
 import { destination } from '../index'
 
 const Destination = () => {
   const [currentIndex, setCurrebtIndex] = React.useState(0)
-  const [active, setActive] = React.useState(false)
-//   const prevSlide =  () => {
-//     const isFirstSlide = currentIndex === 0
-//     const newIndex = isFirstSlide ? destination.length - 1 : currentIndex -1 
-//     setCurrebtIndex(newIndex)
-//   }
-//   const nextSlide =  () => {
-//     const isLastSlide = currentIndex === destination.length - 1
-//     const newIndex = isLastSlide ? 0 : currentIndex + 1
-//     setCurrebtIndex(newIndex)
-//   }
+
   const goToSlide = (event) => {
     let x = event.target.id;
-    // setCurrebtIndex(techIndex)
     if(x === 'one'){
         setCurrebtIndex(0)
     }else if (x === 'two'){
@@ -40,9 +28,6 @@ const Destination = () => {
             </div>
             <div className='D-location-container'>
                 <div className='D-location '>
-                {/* {destination.map((dest, destIndex) =>(
-                <div className='D-location-item' id={active ? 'D-location-item active' : 'D-location-item'} key={destIndex} onClick={() => goToSlide(destIndex)}><p className={dest.classname}>{dest.name}</p></div>
-                ))} */}
                  <div 
                     onClick={event => goToSlide(event)} 
                     className={currentIndex === 0 ? 'D-location-item D-active' : 'D-location-item'} id='one'>MOON</div>

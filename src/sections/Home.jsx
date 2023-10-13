@@ -1,5 +1,4 @@
 import React from 'react'
-import { backgroundDesktopHome } from '../assets/home'
 import Navbar from '../componenet/Navbar'
 
 const Home = () => {

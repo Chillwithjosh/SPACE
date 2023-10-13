@@ -1,25 +1,12 @@
 import React from 'react'
 import { close, logo } from '../assets/icons'
 import {  AiOutlineMenu } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import { SidebarData } from './SidebarData'
 
 const Navbar = () => {
     const [openMenu, setOpenMenu] = React.useState(false)
     const showMenu = () => setOpenMenu(!openMenu)
-    const [currentIndex, setCurrebtIndex] = React.useState(0)
-    const goToSlides = (event) => {
-    let x = event.target.id;
-    if(x === 'one'){
-        setCurrebtIndex(0)
-    }else if (x === 'two'){
-        setCurrebtIndex(1)
-    }else if (x === 'three'){
-        setCurrebtIndex(2)
-    }else if (x === 'four'){
-        setCurrebtIndex(3)
-    }
-  }
 
 return (
     <nav>
@@ -31,38 +18,30 @@ return (
         </div>
         <div className='lineNav'></div>
         <div className='links-container'>
-        <Link className='none'  to='/SPACE'>
+        <NavLink className='none' to='/SPACE'>
         <p
-            onClick={event => goToSlides(event)} 
-            // className={currentIndex === 0 ? 'link N-active' : 'link'}  
-            className='link N-active'
+            className='link none'
             id='one'
         ><span className='number right'>00 </span><span className='text'> HOME</span></p>
-        </Link>
-        <Link className='none' to='/destination'>
-        <p 
-            onClick={event => goToSlides(event)}
-            // className={currentIndex === 1 ? 'link N-active' : 'link'} 
+        </NavLink>
+        <NavLink className='none' to='/destination'>
+        <p
             className='link N-active'
             id='two'
         ><span className='number'>01 </span><span className='text'> DESTINATION</span></p>
-        </Link>
-        <Link className='none' to='/crew'>
+        </NavLink>
+        <NavLink className='none' to='/crew'>
         <p 
-            onClick={event => goToSlides(event)}
-            // className={currentIndex === 2 ? 'link N-active' : 'link'}
             className='link N-active'
             id='three'
         ><span className='number'>02 </span><span className='text'> CREW</span></p>
-        </Link>
-        <Link className='none' to='/technology'>
-        <p 
-            onClick={event => goToSlides(event)}
-            // className={currentIndex === 3 ? 'link N-active' : 'link'} 
+        </NavLink>
+        <NavLink className='none' to='/technology'>
+        <p
             className='link N-active'
             id='four'
         ><span className='number'>03 </span><span className='text'> TECHNOLOGY</span></p>
-        </Link>
+        </NavLink>
         </div>
         </div>
         <>
@@ -87,16 +66,12 @@ return (
                     />
                 </div>
             <ul className='ul'>
-                
-                {/* <h1>khi<AiOutlineMenu className='close' onClick={showMenu} /></h1> */}
-
-                
                 {SidebarData.map((item, index) => {
                 return (
                     <li key={index} className= {item.cName}>
-                        <Link className='none' to={item.path}>
+                        <NavLink className='none' to={item.path}>
                             <p className='title'><span className='number-p'>{item.number}</span><span className='text-p'>{item.title}</span></p>
-                        </Link>
+                        </NavLink>
                     </li>
                 )
             })}

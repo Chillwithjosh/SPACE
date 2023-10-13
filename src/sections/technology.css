@@ -26,7 +26,6 @@
     display: flex;
     color: white;
     justify-content: space-between;
-    /* gap: 5rem; */
 }
 
 .T-container{
@@ -86,14 +85,6 @@
     border-bottom-left-radius: 7px;
 }
 
-/* #one.active{
-    background-color: aqua;
-    color: blue;
-} */
-
-/* .T-round{
-    background-color: rgba(185, 39, 39, 0.288);
-} */
 .T-active{
     background-color: white;
     color: black;
@@ -154,11 +145,6 @@
         margin-bottom: 2.5rem;
         margin-right: 1rem;
     }
-    
-    /* .T-round:hover{
-        background-color: white;
-        color: black;
-    } */
     
     .T-text-container{
         padding-left: 0rem;
@@ -221,11 +207,6 @@
         margin-bottom: 2.5rem;
         margin-right: 1rem;
     }
-    
-    /* .T-round:hover{
-        background-color: white;
-        color: black;
-    } */
     
     .T-text-container{
         padding-left: 0rem;

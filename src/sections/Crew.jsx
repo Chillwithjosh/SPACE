@@ -6,9 +6,7 @@ import { crew } from '../index'
 
 const Crew = () => {
     const [currentIndex, setCurrebtIndex] = React.useState(0)
-    const [active, setActive] = React.useState(false)
     const goToSlide = (event) => {
-    // setCurrebtIndex(crewIndex)
     let x = event.target.id;
     if(x === 'one'){
         setCurrebtIndex(0)
@@ -32,9 +30,6 @@ const Crew = () => {
                     <p className='C-subtext'>{crew[currentIndex].subtext}</p>
             </div>
             <div className='C-dot'>
-            {/* {crew.map((crew,crewIndex) =>(
-                <div key={crewIndex} onClick={() => goToSlide(crewIndex)} ><div className='dot'></div></div>
-            ))} */}
             <div 
                 onClick={event => goToSlide(event)}  
                 className={currentIndex === 0 ? 'dot C-active' : 'dot'} 
@@ -68,9 +63,6 @@ const Crew = () => {
             </div>
             <div className='C-line'></div>
             <div className='C-dot-p'>
-            {/* {crew.map((crew,crewIndex) =>(
-                <div key={crewIndex} onClick={() => goToSlide(crewIndex)} ><div className='dot-p'></div></div>
-            ))} */}
                 <div 
                     onClick={event => goToSlide(event)}  
                     className={currentIndex === 0 ? 'dot-p C-active' : 'dot-p'} 
