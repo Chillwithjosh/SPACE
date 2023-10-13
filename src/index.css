@@ -127,6 +127,10 @@ nav{
   border-bottom: 2px solid transparent ;
 }
 
+.active{
+  border-bottom: 2px solid white ;
+}
+
 .none{
   text-decoration: none;
 }
@@ -139,10 +143,6 @@ nav{
   z-index: 100;
   margin-left: 5rem;
   position: absolute;
-}
-
-.active{
-  border-bottom: 2px solid white ;
 }
 
 .selected{
@@ -301,9 +301,6 @@ nav{
     align-items: center;
     margin:  auto;
     margin-top: 9.8rem;
-  }
-  .active{
-    border-bottom: 2px solid white ;
   }
 }
 

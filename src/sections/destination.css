@@ -45,6 +45,7 @@
 
 .D-location-item:hover{
     border-bottom: 2px solid white;
+    transition: ease-in-out .25s;
 }
 .D-active{
     border-bottom: 2px solid white;

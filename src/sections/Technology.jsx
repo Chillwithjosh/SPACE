@@ -21,7 +21,7 @@ const Technology = () => {
     <section className=' imageLandscapeT imagePortraitT imageTabletT '>
         <Navbar/>
         <div>
-            <p className='Tspan-container'><span className='Tspan-number'>03</span><span className='Tspan-text'>MEET YOUR CREW</span></p>
+            <p className='Tspan-container'><span className='Tspan-number'>03</span><span className='Tspan-text'>SPACE LAUNCH 101</span></p>
         </div>
         <img
             src={technology[currentIndex].imgURL}
