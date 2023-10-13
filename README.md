@@ -1,8 +1,17 @@
-# React + Vite
+# SPACE
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Description
+A multipage website that explores the possibilities of space travel A React website that features a sophisticated blurry navigation bar with image carousel of different planets and a space shuttle also features the new react router-dom@6
 
-Currently, two official plugins are available:
+## Live Link
+https://chillwithjosh.github.io/SPACE/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Languages and Frammeworks
+* CSS
+* HTML
+* Javascript
+* React
+
+## Support and contact details
+In case you run into any issues, kindly contact me on this email: olabiyijoshua15@gmail.com
+
